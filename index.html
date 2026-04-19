@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — NTNT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #111318;
+    --bg-elevated: #1a1d24;
+    --accent: #4ECDC4;
+    --text-primary: #E8EAED;
+    --text-secondary: #9BA1A8;
+    --text-muted: #6B7078;
+    --border: #2A2E36;
+    --border-subtle: #1f232a;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+  }
+
+  header.masthead {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 48px;
+    margin-bottom: 64px;
+  }
+
+  .brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 8vw, 88px);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+  }
+
+  .effective-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .intro {
+    font-size: 17px;
+    color: var(--text-secondary);
+    margin-top: 32px;
+    line-height: 1.7;
+  }
+
+  section {
+    margin-bottom: 56px;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  h2 .num {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    min-width: 32px;
+  }
+
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  em {
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  ul li {
+    color: var(--text-secondary);
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 12px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  ul li strong {
+    color: var(--text-primary);
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(78, 205, 196, 0.3);
+    transition: border-color 0.2s ease;
+  }
+
+  a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .callout {
+    background: var(--bg-elevated);
+    border-left: 2px solid var(--accent);
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 2px;
+  }
+
+  .callout p {
+    color: var(--text-primary);
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .path-highlight {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    background: var(--bg-elevated);
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  .contact-block {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: 32px;
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+
+  .contact-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .contact-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+  }
+
+  .contact-email {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+  }
+
+  footer {
+    margin-top: 96px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-subtle);
+    text-align: center;
+  }
+
+  footer p {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 640px) {
+    .page {
+      padding: 48px 24px 80px;
+    }
+
+    header.masthead {
+      padding-bottom: 32px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 24px;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .contact-block {
+      padding: 24px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <span class="brand">NTNT</span>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective April 18, 2026</p>
+    <p class="intro">
+      This Privacy Policy describes how NTNT ("the App," "we," "us") handles your information. NTNT is an iOS fitness tracking application developed by Alek Sukharev ("the Developer"). By using NTNT, you agree to the practices described below.
+    </p>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span> Information We Collect</h2>
+    <p>When you create an account and use NTNT, we collect the following:</p>
+    <ul>
+      <li><strong>Email address</strong> — provided during signup via Sign in with Apple. If you choose Apple's email relay option, we only receive the anonymized relay address.</li>
+      <li><strong>Apple user ID</strong> — a unique identifier provided by Apple to associate your account.</li>
+      <li><strong>Workout logs</strong> — exercises, sets, reps, weights, durations, and any notes you add.</li>
+      <li><strong>Training history</strong> — session dates, completed workouts, and patterns over time.</li>
+      <li><strong>Benchmark results</strong> — performance data you log for benchmark workouts (e.g., named WODs, lifts, time trials).</li>
+      <li><strong>Basic device information</strong> — operating system version and app version, used for compatibility and debugging.</li>
+    </ul>
+    <p>NTNT does <strong>not</strong> collect:</p>
+    <ul>
+      <li>Your precise location</li>
+      <li>Your contacts, photos, or health data from Apple Health (unless explicitly integrated in a future version with your consent)</li>
+      <li>Advertising identifiers (IDFA)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> How Your Data Is Stored</h2>
+    <p>Your data is stored in two places:</p>
+    <ul>
+      <li><strong>Locally on your device</strong> — in an encrypted SQLite database. This allows the app to work offline and provides fast access to your training history.</li>
+      <li><strong>In the cloud via Supabase</strong> — our backend service provider, hosted on servers located in the United States. Cloud storage enables account recovery and cross-device sync.</li>
+    </ul>
+    <p>All data transmitted between your device and our servers is encrypted using HTTPS/TLS. Data stored in Supabase is protected by row-level security policies, meaning your records are only accessible to your authenticated account.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Authentication</h2>
+    <p>NTNT uses <strong>Sign in with Apple</strong> for account creation and login. Apple handles the authentication process entirely — we never see your Apple ID password. We receive only:</p>
+    <ul>
+      <li>A unique user identifier from Apple</li>
+      <li>Your email address (or Apple's private relay address, if you choose to hide your real email)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> How We Use Your Information</h2>
+    <p>We use your information solely to:</p>
+    <ul>
+      <li>Provide the core functionality of the app (logging, tracking, and reviewing your training)</li>
+      <li>Sync your data across devices signed into the same account</li>
+      <li>Respond to support requests you send us</li>
+      <li>Diagnose and fix bugs</li>
+    </ul>
+    <p>We do <strong>not</strong> use your information for advertising, profiling, or behavioral targeting.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Data Sharing</h2>
+    <div class="callout">
+      <p>We do not sell your personal data to anyone, under any circumstances.</p>
+    </div>
+    <p>We share data only with the following service providers, strictly as needed to operate the app:</p>
+    <ul>
+      <li><strong>Apple</strong> — for Sign in with Apple authentication and App Store distribution</li>
+      <li><strong>Supabase</strong> — for cloud database hosting and user authentication infrastructure</li>
+    </ul>
+    <p>These providers are contractually bound to handle your data securely and only for the purposes of providing their services to NTNT.</p>
+    <p>We may disclose information if legally required to do so — for example, in response to a valid subpoena or court order — or if necessary to protect the safety of users or the public.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Analytics</h2>
+    <p>NTNT does not currently collect usage analytics.</p>
+    <p><em>This section will be updated when anonymous analytics are introduced in a future release. Any analytics will be aggregated and anonymized, and will not be used to identify individual users.</em></p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span> Your Rights and Choices</h2>
+    <p>You have control over your data:</p>
+    <ul>
+      <li><strong>Access your data</strong> — your workout history is always visible within the app.</li>
+      <li><strong>Delete your account and data</strong> — you can permanently delete your account and all associated data directly within the app: <span class="path-highlight">Settings → Account → Delete Account</span>. This action is irreversible and will remove your data from both your device and our cloud servers within 30 days.</li>
+      <li><strong>Export your data</strong> — you can request a copy of your data by emailing us at the address below.</li>
+      <li><strong>Correct your data</strong> — you can edit or delete individual workout entries at any time within the app.</li>
+    </ul>
+    <p>If you are a resident of California, the European Union, the United Kingdom, or another jurisdiction with applicable privacy laws, you may have additional rights including the right to access, correct, delete, or port your data, and the right to lodge a complaint with a supervisory authority. Contact us at the email below to exercise these rights.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span> Data Retention</h2>
+    <p>We retain your data for as long as your account is active. When you delete your account, your data is removed from our systems within 30 days, except where we are legally required to retain certain records.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span> Security</h2>
+    <p>We take reasonable measures to protect your information:</p>
+    <ul>
+      <li>All network traffic is encrypted in transit (HTTPS/TLS)</li>
+      <li>Database access is protected by row-level security in Supabase</li>
+      <li>Authentication is handled by Apple, removing password management risk on our end</li>
+    </ul>
+    <p>No system is perfectly secure, however, and we cannot guarantee absolute security. If we become aware of a data breach that affects your information, we will notify you promptly as required by applicable law.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Children's Privacy</h2>
+    <p>NTNT is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete the information promptly.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span> International Users</h2>
+    <p>NTNT's cloud infrastructure is hosted in the United States. If you use the app from outside the US, your data will be transferred to and stored in the US. By using NTNT, you consent to this transfer.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">12</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date at the top of this page. For significant changes, we will notify users through the app or via email. Continued use of the app after changes take effect constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">13</span> Contact</h2>
+    <p>For questions about this Privacy Policy, to request data deletion or export, or to exercise any of your privacy rights, contact:</p>
+    <div class="contact-block">
+      <div class="contact-label">Developer</div>
+      <div class="contact-name">Alek Sukharev</div>
+      <div class="contact-email"><a href="mailto:sukharevalek1@gmail.com">sukharevalek1@gmail.com</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>NTNT — TRAIN WITH INTENTION</p>
+  </footer>
+
+</div>
+</body>
+</html>
