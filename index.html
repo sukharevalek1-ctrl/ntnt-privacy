@@ -19,15 +19,8 @@
     --border-subtle: #1f232a;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
 
   body {
     background: var(--bg);
@@ -40,11 +33,7 @@
     min-height: 100vh;
   }
 
-  .page {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 80px 32px 120px;
-  }
+  .page { max-width: 760px; margin: 0 auto; padding: 80px 32px 120px; }
 
   header.masthead {
     border-bottom: 1px solid var(--border);
@@ -85,9 +74,7 @@
     line-height: 1.7;
   }
 
-  section {
-    margin-bottom: 56px;
-  }
+  section { margin-bottom: 56px; }
 
   h2 {
     font-family: 'Bebas Neue', sans-serif;
@@ -118,29 +105,12 @@
     margin-bottom: 12px;
   }
 
-  p {
-    color: var(--text-secondary);
-    margin-bottom: 16px;
-  }
+  p { color: var(--text-secondary); margin-bottom: 16px; }
+  p:last-child { margin-bottom: 0; }
+  strong { color: var(--text-primary); font-weight: 500; }
+  em { color: var(--text-muted); font-style: italic; }
 
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  strong {
-    color: var(--text-primary);
-    font-weight: 500;
-  }
-
-  em {
-    color: var(--text-muted);
-    font-style: italic;
-  }
-
-  ul {
-    list-style: none;
-    margin-bottom: 16px;
-  }
+  ul { list-style: none; margin-bottom: 16px; }
 
   ul li {
     color: var(--text-secondary);
@@ -159,9 +129,7 @@
     background: var(--accent);
   }
 
-  ul li strong {
-    color: var(--text-primary);
-  }
+  ul li strong { color: var(--text-primary); }
 
   a {
     color: var(--accent);
@@ -170,9 +138,7 @@
     transition: border-color 0.2s ease;
   }
 
-  a:hover {
-    border-bottom-color: var(--accent);
-  }
+  a:hover { border-bottom-color: var(--accent); }
 
   .callout {
     background: var(--bg-elevated);
@@ -182,11 +148,7 @@
     border-radius: 2px;
   }
 
-  .callout p {
-    color: var(--text-primary);
-    font-size: 15px;
-    margin-bottom: 0;
-  }
+  .callout p { color: var(--text-primary); font-size: 15px; margin-bottom: 0; }
 
   .path-highlight {
     font-family: 'DM Mono', monospace;
@@ -223,10 +185,7 @@
     margin-bottom: 16px;
   }
 
-  .contact-email {
-    font-family: 'DM Mono', monospace;
-    font-size: 14px;
-  }
+  .contact-email { font-family: 'DM Mono', monospace; font-size: 14px; }
 
   footer {
     margin-top: 96px;
@@ -243,28 +202,11 @@
   }
 
   @media (max-width: 640px) {
-    .page {
-      padding: 48px 24px 80px;
-    }
-
-    header.masthead {
-      padding-bottom: 32px;
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 24px;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    .contact-block {
-      padding: 24px;
-    }
+    .page { padding: 48px 24px 80px; }
+    header.masthead { padding-bottom: 32px; margin-bottom: 48px; }
+    h2 { font-size: 24px; flex-direction: column; gap: 4px; }
+    section { margin-bottom: 40px; }
+    .contact-block { padding: 24px; }
   }
 </style>
 </head>
@@ -274,7 +216,7 @@
   <header class="masthead">
     <span class="brand">NTNT</span>
     <h1>Privacy Policy</h1>
-    <p class="effective-date">Effective April 18, 2026</p>
+    <p class="effective-date">Effective April 24, 2026</p>
     <p class="intro">
       This Privacy Policy describes how NTNT ("the App," "we," "us") handles your information. NTNT is an iOS fitness tracking application developed by Alek Sukharev ("the Developer"). By using NTNT, you agree to the practices described below.
     </p>
@@ -290,6 +232,7 @@
       <li><strong>Training history</strong> — session dates, completed workouts, and patterns over time.</li>
       <li><strong>Benchmark results</strong> — performance data you log for benchmark workouts (e.g., named WODs, lifts, time trials).</li>
       <li><strong>Basic device information</strong> — operating system version and app version, used for compatibility and debugging.</li>
+      <li><strong>Anonymous usage analytics</strong> — aggregated, non-identifiable events such as feature usage and screen views, collected via PostHog to help improve the app.</li>
     </ul>
     <p>NTNT does <strong>not</strong> collect:</p>
     <ul>
@@ -303,8 +246,8 @@
     <h2><span class="num">02</span> How Your Data Is Stored</h2>
     <p>Your data is stored in two places:</p>
     <ul>
-      <li><strong>Locally on your device</strong> — in an encrypted SQLite database. This allows the app to work offline and provides fast access to your training history.</li>
-      <li><strong>In the cloud via Supabase</strong> — our backend service provider, hosted on servers located in the United States. Cloud storage enables account recovery and cross-device sync.</li>
+      <li><strong>Locally on your device</strong> — in a SQLite database. This allows the app to work offline and provides fast access to your training history.</li>
+      <li><strong>In the cloud via Supabase</strong> — our backend service provider, hosted on servers located in the United States. Cloud storage enables account recovery and sync.</li>
     </ul>
     <p>All data transmitted between your device and our servers is encrypted using HTTPS/TLS. Data stored in Supabase is protected by row-level security policies, meaning your records are only accessible to your authenticated account.</p>
   </section>
@@ -326,6 +269,7 @@
       <li>Sync your data across devices signed into the same account</li>
       <li>Respond to support requests you send us</li>
       <li>Diagnose and fix bugs</li>
+      <li>Improve the app through anonymous, aggregated usage analytics</li>
     </ul>
     <p>We do <strong>not</strong> use your information for advertising, profiling, or behavioral targeting.</p>
   </section>
@@ -339,6 +283,7 @@
     <ul>
       <li><strong>Apple</strong> — for Sign in with Apple authentication and App Store distribution</li>
       <li><strong>Supabase</strong> — for cloud database hosting and user authentication infrastructure</li>
+      <li><strong>PostHog</strong> — for anonymous, aggregated usage analytics and error reporting. No personally identifiable information, workout content, or movement data is included in analytics events.</li>
     </ul>
     <p>These providers are contractually bound to handle your data securely and only for the purposes of providing their services to NTNT.</p>
     <p>We may disclose information if legally required to do so — for example, in response to a valid subpoena or court order — or if necessary to protect the safety of users or the public.</p>
@@ -346,8 +291,8 @@
 
   <section>
     <h2><span class="num">06</span> Analytics</h2>
-    <p>NTNT does not currently collect usage analytics.</p>
-    <p><em>This section will be updated when anonymous analytics are introduced in a future release. Any analytics will be aggregated and anonymized, and will not be used to identify individual users.</em></p>
+    <p>NTNT uses <strong>PostHog</strong>, a privacy-focused analytics service, to collect anonymous usage data. This includes feature usage patterns, screen views, and error reports. No personally identifiable information, workout content, or movement data is included in analytics events.</p>
+    <p>Analytics data is used solely to understand how the app is being used and to prioritize improvements. PostHog processes this data in accordance with their privacy policy. You may contact us at the email below to opt out of analytics collection.</p>
   </section>
 
   <section>
@@ -355,8 +300,8 @@
     <p>You have control over your data:</p>
     <ul>
       <li><strong>Access your data</strong> — your workout history is always visible within the app.</li>
-      <li><strong>Delete your account and data</strong> — you can permanently delete your account and all associated data directly within the app: <span class="path-highlight">Settings → Account → Delete Account</span>. This action is irreversible and will remove your data from both your device and our cloud servers within 30 days.</li>
-      <li><strong>Export your data</strong> — you can request a copy of your data by emailing us at the address below.</li>
+      <li><strong>Delete your account and data</strong> — you can permanently delete your account and all associated data directly within the app: <span class="path-highlight">Profile → Delete Account</span>. This action is irreversible and your data is deleted immediately from both your device and our servers.</li>
+      <li><strong>Export your data</strong> — you can export a copy of your training data directly within the app via <span class="path-highlight">Profile → Export Backup</span>. You may also contact us at the email below for assistance.</li>
       <li><strong>Correct your data</strong> — you can edit or delete individual workout entries at any time within the app.</li>
     </ul>
     <p>If you are a resident of California, the European Union, the United Kingdom, or another jurisdiction with applicable privacy laws, you may have additional rights including the right to access, correct, delete, or port your data, and the right to lodge a complaint with a supervisory authority. Contact us at the email below to exercise these rights.</p>
@@ -364,7 +309,7 @@
 
   <section>
     <h2><span class="num">08</span> Data Retention</h2>
-    <p>We retain your data for as long as your account is active. When you delete your account, your data is removed from our systems within 30 days, except where we are legally required to retain certain records.</p>
+    <p>We retain your data for as long as your account is active. When you delete your account, your personal data and training history are <strong>permanently and immediately deleted</strong> from our systems. This action cannot be undone.</p>
   </section>
 
   <section>
@@ -380,12 +325,13 @@
 
   <section>
     <h2><span class="num">10</span> Children's Privacy</h2>
-    <p>NTNT is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete the information promptly.</p>
+    <p>NTNT is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete the information promptly.</p>
+    <p>Users between the ages of 13 and 18 should review this policy with a parent or guardian before using the app.</p>
   </section>
 
   <section>
     <h2><span class="num">11</span> International Users</h2>
-    <p>NTNT's cloud infrastructure is hosted in the United States. If you use the app from outside the US, your data will be transferred to and stored in the US. By using NTNT, you consent to this transfer.</p>
+    <p>NTNT's cloud infrastructure is hosted in the United States via Supabase. If you access the app from outside the United States, your data will be transferred to and processed in the United States. Supabase maintains Standard Contractual Clauses and a Data Processing Agreement that govern these transfers in accordance with applicable law, including GDPR.</p>
   </section>
 
   <section>
